@@ -1,0 +1,12 @@
+# LinguaPet 运行与打包依赖（Windows 10/11, Python 3.10+；开发机实测 3.14.2 可用）
+PySide6>=6.8
+pynput>=1.8
+pyperclip>=1.9
+edge-tts>=7.0
+pywin32>=306; sys_platform == 'win32'
+
+# 仅重新生成 assets/icon.ico 时需要，运行时不会导入
+Pillow>=10.0
+
+# 仅打包时需要
+pyinstaller>=6.11

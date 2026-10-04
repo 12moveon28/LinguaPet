@@ -1,0 +1,51 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# ===== 虚拟环境 =====
+venv/
+.venv/
+env/
+
+# ===== PyInstaller 打包产物（中间产物 + 成品均不入库，成品走 Release 附件）=====
+build/
+dist/
+*.spec.bak
+
+# ===== 第三方词典程序（许可证不明，不随仓库分发，README 说明自行放入）=====
+kd.exe
+
+# ===== 用户运行时数据（含个人内容，不入库；首次运行自动生成）=====
+# 注意：data/builtin_dict.json 是程序必需的内置词库，需保留
+config.json
+data/wrong_words.json
+data/tts_cache/
+logs/
+*.log
+
+# 原子写临时文件与损坏备份（config 与错题本都会生成，后者含个人单词）
+*.tmp
+*.corrupt-*
+
+# ===== 本地试听/调试样本与临时输出 =====
+tts_samples/
+build_log.txt
+run_out.txt
+run_err.txt
+check_out.txt
+check_err.txt
+
+# ===== IDE / 编辑器 =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== 操作系统杂项 =====
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
